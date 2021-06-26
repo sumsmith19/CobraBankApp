@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+		<title>Login</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+    <div class="container">
+	<!--Top of Page-->
+      <h1>Cobra Bank Login</h1>
+	  <!-- Login Form-->
+      <form action="" method="post">
+        <input type="text" placeholder="Username" name="username" value="{{ request.form.username }}"required><br>
+        <input type="password" placeholder="Password" name="password" value="{{ request.form.password }}" required><br>
+        <input class="btn btn-default" type="submit" value="Login">
+      </form>
+	  <!--Link to Register-->
+	  <p id="intro">Don't have an account? <a href="/register">Register now!</a></p>
+    </div>
+  </body>
+</html>

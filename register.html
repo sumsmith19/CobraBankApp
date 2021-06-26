@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+		<title>Register</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+    <div class="container">
+	<!--Top of Page-->
+      <h1>Registration Form</h1>
+      <br>
+	  <!--Form-->
+      <form action="" method="post">
+         <input type="text" placeholder="First Name" name="firstname" value="{{ request.form.firstname }}" required><br>
+         <input type="text" placeholder="Last Name" name="lastname" value="{{ request.form.lastname }}" required><br>
+		 <input type="text" placeholder="Username" name="username" value="{{ request.form.username }}" required><br>
+		 <input type="text" placeholder="Email" name="email" value="{{ request.form.email }}" required><br>
+         <input type="password" placeholder="Password" name="password" value="{{ request.form.password }}" required><br>
+		 <input type="password" placeholder="Confirm Password" name="conpassword" value="{{ request.form.conpassword }}" required><br>
+         <input class="btn btn-default" type="submit" value="Register">
+      </form>
+	  <!--Link to Sign In-->
+	  <p id="intro">Already a user? <a href="/">Login here.</a></p>
+	  
+    </div>
+  </body>
+</html>

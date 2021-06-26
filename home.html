@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    
+	<head>
+		<title>Cobra Bank App</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<div class="container">
+	    <!--Top of Page-->
+	    <h1>Cobra Bank</h1>
+		<!--Links to other pages-->
+		<div class="topnav">
+		  <a class="active" href="/home">Home</a>
+		  <a href="/change_password">Change Password</a>
+		  <a href="/about">About</a>
+		  <a href="/">Logout</a>
+		</div>
+		<center>
+		<br>
+		<br>
+		<p>Hello, {{user.firstname}}! <br> If you have any questions, concerns, or comments, you can reach our 24/7 hotline at 800-31-COBRA.</p>
+		<br>
+		<button type="button">Deposit</button>
+		<button type="button">Withdrawal</button>
+		<button type="button">Transfer</button>
+		<h2>Checking Account</h2>
+		<h3>Balance: {{user.checking}}</h3>
+		<br>
+		<h2>Saving Account</h2>
+		<h3>Balance: {{user.saving}}</h3>
+		<br>
+		<h2>Interest</h2>
+		<h3>Balance: {{user.interest}}</h3>
+		<br>
+		
+		</center>
+		
+		
+	</div>	
+	</body>
+</html>
